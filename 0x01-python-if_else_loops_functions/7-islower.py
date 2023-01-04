@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for i in range(9):
-    for j in range(i + 1, 10):
-        if i == 8:
-            print("{}{}".format(i, j))
-        else:
-            print("{}{}".format(i, j), end=", ")
+def islower(c):
+    number = ord(c)
+    if number in range(97, 123):
+        return True
+    return False
