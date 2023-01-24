@@ -19,7 +19,6 @@ class Node:
         """Get/set the data of the Node."""
         return (self.__data)
 
-
     @data.setter
     def data(self, value):
         if not isinstance(value, int):
@@ -30,7 +29,6 @@ class Node:
     def next_node(self):
         """Get/set the next_node of the Node."""
         return (self.__next_node)
-
 
     @next_node.setter
     def next_node(self, value):
