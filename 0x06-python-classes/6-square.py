@@ -18,7 +18,8 @@ class Square:
         """
         self.size = size
         self.position = position
-    def area(self):
+    
+def area(self):
         """calculates the square's area
         Returns:
             The area of the square
