@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Defines Rectangle class
-"""
+""" module that created a rectangle class"""
 
 
 class Rectangle:
