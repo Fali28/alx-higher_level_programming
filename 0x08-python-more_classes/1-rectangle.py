@@ -1,39 +1,40 @@
 #!/usr/bin/python3
-"""
-Defines Rectangle class
-"""
+""" module that creates a rectangle and initializes its features """
 
 
 class Rectangle:
-    """ Rectangle """
+    """ inidialize with the width and height with value checks
+
+    Args:
+        width: how phat dis 4polygon gon be
+        height: how tall dis box is
+
+    Return: nonezo
+    """
+
     def __init__(self, width=0, height=0):
-        """ initizie width and height """
-        self.height = height
         self.width = width
+        self.height = height
 
     @property
     def width(self):
-        """ width getter """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """ width setter """
-        if type(value) is not int:
+        if isinstance(value, int) is False:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @property 
-   def height(self):
-        """ height getter """
+    @property
+    def height(self):
         return self.__height
 
     @height.setter
     def height(self, value):
-        """ height setter """
-        if type(value) is not int:
+        if isinstance(value, int) is False:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
