@@ -21,8 +21,8 @@ if __name__ == "__main__":
             if code in codes:
                 codes[code] += 1
         except ValueError:
-
             pass
+
     def print_stats():
         '''Prints accumulated statistics.'''
         print("File size: {}".format(size[0]))
